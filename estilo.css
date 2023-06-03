@@ -1,0 +1,88 @@
+/* GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CABECERA */
+header {
+    background-color: #561445;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: small;
+}
+
+/* FORMULARIO */
+#formulario {
+    border: 3px solid #f9c824;
+    margin: 10px;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+#formulario label {
+    font-weight: bold;
+    margin-right: 2px;
+}
+#formulario div:first-child {
+    display: flex;
+    width: 100%;
+    gap: 3px;
+}
+#formulario div:first-child .input#name_field {
+    width: 35%;
+}
+#formulario div:first-child .input {
+    display: flex;
+    width: 100%;
+    white-space: nowrap;
+}
+#formulario div:first-child .input input {
+    width: 100%;
+    flex-grow: 1;
+}
+#formulario .input#bio_field label {
+    display: block;
+}
+#formulario .input#bio_field textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 40px;
+    padding: 3px;
+}
+#formulario button {
+    align-self: center;
+    padding: 1px 4px;
+    margin: 15px 0;
+}
+
+/* TARJETAS */
+.tarjeta {
+    border: 3px solid #8d093f;
+    margin: 10px;
+    margin-bottom: 20px;
+    box-shadow: 4px 3px #8d093f;
+}
+.tarjeta .avatar {
+    width: 30px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.tarjeta>div {
+    display: inline-block;
+}
+.tarjeta .lenguajes {
+    display: flex;
+}
+.tarjeta .lenguajes img {
+    height: 15px;
+}
+#developers p {
+    font-weight: bold;
+}
